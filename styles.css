@@ -1,0 +1,211 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+:root {
+    --paars:#5722CD;
+    --blauw:#4845E4;
+    --roze:#ED4385;
+    --zwart:#0C0C0C;
+    --lichtpaars:#F2F0FF;
+    --lichtgrijs:#F3F6F9;
+    --grijs:#7A7A7A
+}
+h2{
+    color: var(--blauw);
+}
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+h1{
+    font-family: 'Merriweather', serif;
+}
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: large;
+}
+h3 {
+    font-family: 'Merriweather', serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+body{
+    border: solid orange;
+}
+main {
+    border: solid darkblue;
+}
+section {
+    border: solid #ED4385;
+}
+article{
+    border: solid darkgreen thick;
+
+}
+
+
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+.box-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.article-image-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-two{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows:350px 350px 350px ;
+    grid-gap:20px;
+    grid-template-areas:
+            "a b c"
+            "d e f";
+}
+.item-a {
+    grid-area:a;
+}
+.item-b {
+    grid-area:b;
+}
+.item-c {
+    grid-area:c;
+}
+.item-d {
+    grid-area:d;
+}
+.item-e {
+    grid-area:e;
+}
+.item-f {
+    grid-area:f;
+}
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+.article-one-color{
+    background-color: var(--lichtgrijs);
+}
+.article-heading-color{
+    color: var(--zwart)
+}
+header{
+        color:white;
+    /*padding-right: 20px ;*/
+    padding-bottom:200px;
+    /*padding-left: 20px;*/
+    /*padding-top: 20px;*/
+    /*margin-top: 10px;*/
+    position: relative;
+}
+li{
+    padding: 10px 10px 10px 10px;
+    margin-right: 10px;
+}
+.lets-work{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+}
+.article-one-style{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.photo-size{
+    width: 400px;
+}
+.section-padding{
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 50px;
+}
+.section-two-layout {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.blocks-design{
+    border: black solid;
+    padding: 20px;
+    padding-bottom:20px;
+}
+.sextion-two-img {
+    width: 50px;
+}
+
+/* --------------- 4.1 Header ------------------------- */
+.header-grad-box {
+    background-image:linear-gradient(#4845E4 70%, #5722CD);
+}
+header{
+    border: solid red ;
+}
+nav {
+    border: dotted white;
+}
+ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-content: space-between;
+    list-style:none;
+}
+
+.rcorners{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color:var(--roze);
+    padding: 20px;
+    width: 150px;
+    height: 5px;
+}
+
+.squiggle-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom:0px;
+    right:150px;
+    left: 150px;
+    height: 60px;
+}
+.img-1{
+    size: 43px 70px;
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (min-width: 1200px) {
+    main{
+
+    }
+}
