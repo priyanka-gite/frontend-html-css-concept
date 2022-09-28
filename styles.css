@@ -40,12 +40,13 @@ font-size: x-large;
 
 }
 header{
-    color:white;
-    padding-right: 20px ;
-    padding-bottom:200px;
-    padding-left: 20px;
-    padding-top: 20px;
-    margin-top: 10px;
+        color:white;
+        padding-right: 20px ;
+        padding-bottom:100px;
+        padding-left: 20px;
+        padding-top: 20px;
+        margin-top: 10px;
+        position: relative;
 }
 li{
     padding: 10px 10px 10px 10px;
@@ -83,9 +84,6 @@ li{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.box-padding {
-   margin: 10px ;
-}
 
 footer{
     background-color: var(--zwart);
@@ -113,16 +111,6 @@ body{
 
 }
 /* ------------------------------- 3. Layout --------------------------------------- */
-body{
-    border: solid orange;
-    margin: 100px;
-}
-main {
-    border: solid darkblue;
-}
-section {
-    border: solid #ED4385;
-}
 
 
 
@@ -145,12 +133,6 @@ section {
     justify-content: center;
 }
 
-header{
-    border: solid red ;
-}
-nav {
-    border: dotted white;
-}
 ul{
     display: flex;
     flex-direction:row;
@@ -168,6 +150,7 @@ ul{
     padding: 20px;
     width: 150px;
     height: 5px;
+
 }
 
 .squiggle-image{
@@ -183,15 +166,7 @@ ul{
 .img-1{
     size: 43px 70px;
 }
-header{
-    color:white;
-    /*padding-right: 20px ;*/
-    padding-bottom:200px;
-    /*padding-left: 20px;*/
-    /*padding-top: 20px;*/
-    /*margin-top: 10px;*/
-    position: relative;
-}
+
 li{
     padding: 10px 10px 10px 10px;
     margin-right: 10px;
@@ -218,8 +193,9 @@ li{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     margin-right: 20px;
+
 }
 .box-2 {
     display: flex;
@@ -238,7 +214,7 @@ li{
     margin-top: 50px;
 }
 .image-wrapper{
-    flex-basis: 800px;
+    flex-basis: 900px;
     flex-grow: 0;
     flex-shrink: 1;
 }
@@ -254,35 +230,51 @@ li{
 .section-two-box {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 50px;
+    flex-basis: 0 0 350px;
+
 
    }
 .blocks-design{
+    box-sizing: border-box;
     border: var(--blauw) solid;
-    box-shadow: ;
-    flex: 0 0 33.33%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height: 400px;
+    width:400px ;
+    box-shadow:2px 2px 2px 2px grey ;
+    margin: 30px;
     padding: 20px;
-    height: 350px;
-    max-width: 30%;
+
 }
 .sec-3{
     background-color: var(--blauw);
     color: white ;
     font-weight: bold;
+    font-size: 30px;
+}
+.sec-three{
+    color: white ;
 }
 .form-styles{
-    text-align: center;
-      padding: 50px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .button-position {
-    position:absolute;
-    right: 350px;
-    left: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-
+.input-field{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 /* ------------------------------- 5. Media Queries -------------------------------- */
 
 @media screen and (max-device-width: 576px) {
